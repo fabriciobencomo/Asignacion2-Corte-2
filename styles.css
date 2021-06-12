@@ -1,0 +1,62 @@
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+p {
+    color: black;
+    font-size: 2rem;
+}
+
+.bg{
+    background-image: url(img/woodbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(min-width: 768px){
+    .layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    column-gap: 2rem;
+    margin: 0;
+    }
+}
+
+.imagen {
+    height: 30rem;
+    background-image: url(img/pizza.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+@media(min-width: 768px) {
+    .imagen{
+        height: auto;
+    }
+}
+.opciones{
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    column-gap: 2rem;
+}
+
+.boton{
+    margin: 1rem 0;
+    background-color: #61120e;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+.boton:hover{
+    cursor: pointer;
+}
